@@ -1,0 +1,144 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.product-item .price {
+    font-size: 1.2rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.product-item .add-to-cart {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-gallery {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.product-gallery img {
+    width: 100%;
+    display: none;
+}
+
+.product-gallery img.active {
+    display: block;
+}
+
+.product-details {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-details .price {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.product-details .description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-details label {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.product-details input[type="number"] {
+    width: 50px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-details .add-to-cart {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+    }
+
+    .product-details {
+        text-align: center;
+    }
+}
